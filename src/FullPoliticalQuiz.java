@@ -43,552 +43,809 @@ public class FullPoliticalQuiz {
     private void initQuestions() {
         questions = new ArrayList<>();
 
-        // QUIZ 1
-        questions.add(new QuizQuestion("What is Politics according to Aristotle?",
-                Arrays.asList("Politics as the study of power", "Politics as the master science", "Politics as the authoritative allocation of values", "Who gets what, when and how"),
-                "Politics as the master science"));
-        questions.add(new QuizQuestion("Who is the author of 'The Republic'?",
-                Arrays.asList("Socrates", "Plato", "Aristotle", "Niccolo Machiavelli"),
-                "Plato"));
-        questions.add(new QuizQuestion("In which historical period did religious institutions hold tremendous political power?",
-                Arrays.asList("Ancient Age", "Middle Ages", "Early Modern Period", "Modern Period"),
-                "Middle Ages"));
-        questions.add(new QuizQuestion("Which subfield of political science studies a nation’s policies and policy development?",
-                Arrays.asList("Domestic policy", "Comparative policy", "International policy", "All mentioned"),
-                "Domestic policy"));
-        questions.add(new QuizQuestion("Which factors influence politics according to Montesquieu?",
-                Arrays.asList("History and mentality", "Climate and geography", "Economics and culture", "National language and traditions"),
-                "Climate and geography"));
-        questions.add(new QuizQuestion("What are the main methodologies of Political Science?",
-                Arrays.asList("Qualitative methods", "Case studies, Survey research, Experiments", "Quantitative methods", "All the mentioned"),
-                "All the mentioned"));
-        questions.add(new QuizQuestion("Who considered politics as the authoritative allocation of values?",
-                Arrays.asList("David Easton", "Harold Lawell", "Andrew Heywood", "Henry Sidgwick"),
-                "David Easton"));
-        questions.add(new QuizQuestion("What is politics according to Andrew Heywood?",
-                Arrays.asList("Politics as an activity and a process", "Politics as the master science", "Who gets what, when and how", "Politics as the art of government"),
-                "Politics as the art of government"));
-        questions.add(new QuizQuestion("Right form of government according to Aristotle:",
-                Arrays.asList("Democracy", "Tyranny", "Oligarchy", "Polity"),
-                "Polity"));
-        questions.add(new QuizQuestion("Political science is mostly called an interdisciplinary subject that includes other disciplines, such as:",
-                Arrays.asList("Philosophy, Sociology", "Psychology, History, Anthropology", "Economy, Economy", "All the mentioned"),
-                "All the mentioned"));
+        questions.add(new QuizQuestion("What is the result of the following code?\n" +
+                "\n" +
+                "x = [1, 2, 3, 4]  \n" +
+                "x[1:3] = [7, 8, 9]  \n" +
+                "print(x)",
+                Arrays.asList("Throws an error",
+                        "[1, 7, 9, 4]",
+                        "[1, 7, 8, 9, 4]",
+                        "[1, 2, 3, 4, 7, 8, 9]"),
+                "[1, 7, 8, 9, 4]"));
 
-        // QUIZ 2
-        questions.add(new QuizQuestion("What is the term for the ability to influence someone to act in a way that is contrary to their own will?",
-                Arrays.asList("Power", "Legitimacy", "Law", "Charisma"),
-                "Power"));
-        questions.add(new QuizQuestion("Give the definition of the coercive type of power?",
-                Arrays.asList("The power to force compliance through the threat of punishment or other negative consequences",
-                        "A type of power that involves the ability to offer incentives or rewards to influence behavior",
-                        "A type of power that derives from an individual’s formal authority",
-                        "A type of power that derives from personal qualities"),
-                "The power to force compliance through the threat of punishment or other negative consequences"));
-        questions.add(new QuizQuestion("What type of legitimate rule is represented by the Japanese Emperor or The Vatican?",
-                Arrays.asList("Traditional", "Rational", "Legal", "Charismatic"),
-                "Traditional"));
-        questions.add(new QuizQuestion("The belief that those who hold power have the right to do so is called...",
-                Arrays.asList("Power", "Legitimacy", "Law", "Coercion"),
-                "Legitimacy"));
-        questions.add(new QuizQuestion("Who distinguished 3 ideal types of legitimate ruler?",
-                Arrays.asList("Max Weber", "Karl Marx", "Elen Origely", "French and Raven"),
-                "Max Weber"));
-        questions.add(new QuizQuestion("Find the example of referent type of power",
-                Arrays.asList("The use of physical force or the threat of arrest by police officers",
-                        "Students scholarships that motivate to study well",
-                        "The authority of parents to make decisions on behalf of their children (legally)",
-                        "The power of celebrities who can influence public opinion through their endorsements"),
-                "The power of celebrities who can influence public opinion through their endorsements"));
-        questions.add(new QuizQuestion("Type of power that is explicitly tied to the functioning of political institutions and processes",
-                Arrays.asList("Economic power", "Social Power", "Political Power", "Military Power"),
-                "Political Power"));
-        questions.add(new QuizQuestion("To which spheres can 'videomalaise' be referred in the modern period (according to K. Newton, 2008)?",
-                Arrays.asList("Television and newspapers", "Television news on political attitudes and opinion", "Television, newspapers, radio, the World Wide Web", "Newspapers on political and economic opinion"),
-                "Television, newspapers, radio, the World Wide Web"));
-        questions.add(new QuizQuestion("What is public opinion based on according to K. Newton, 2008?",
-                Arrays.asList("Television, radio, newspapers", "Opinions, attitudes, values", "Vision, education, experience", "Social status, ideology, gender"),
-                "Opinions, attitudes, values"));
-        questions.add(new QuizQuestion("What paradox(es) constrains the impacts of the media (PK. Newton, 2008)?",
-                Arrays.asList("The more people know about and have firsthand experienced something, the more likely they are to trust media’s judgments",
-                        "Those who are least interested, involved and knowledgeable about politics are the most distrustful to media influence",
-                        "The more partisan the mass media and the more they try to persuade people of a political position, the less likely they are to be seen as impartial and neutral, and the less likely they are to be influential",
-                        "All the mentioned"),
-                "The more partisan the mass media and the more they try to persuade people of a political position, the less likely they are to be seen as impartial and neutral, and the less likely they are to be influential"));
+        questions.add(new QuizQuestion("Which operator checks if a value is not in a list?",
+                Arrays.asList("not in",
+                        "not",
+                        "is not",
+                        "!="),
+                "not in"));
 
-        // QUIZ 3
-        questions.add(new QuizQuestion("What is the core of the elitist theory?",
-                Arrays.asList("that there is a coherent or unified power elite that dominates society",
-                        "that the politics functions through interest groups",
-                        "everyone can be an elite",
-                        "elites are the smartest people"),
-                "that there is a coherent or unified power elite that dominates society"));
-        questions.add(new QuizQuestion("According to Mills, the members of the power elite:",
-                Arrays.asList("is simply the superior part of the political organization",
-                        "occupy the strategic command posts of the social structure, in which are now centered the effective means of power, wealth, and celebrity",
-                        "persons who are directly or indirectly concerned with administration",
-                        "performs all of the political functions, monopolizes power, and enjoys the advantages that power brings"),
-                "occupy the strategic command posts of the social structure, in which are now centered the effective means of power, wealth, and celebrity"));
-        questions.add(new QuizQuestion("Who is the author of 'The Ruling Class' (1996)?",
-                Arrays.asList("V. Pareto", "G. Mosca", "R. Michels", "C. Mills"),
-                "G. Mosca"));
-        questions.add(new QuizQuestion("To whom belongs the theory of the 'circulation of elites'?",
-                Arrays.asList("G. Mosca", "R. Michels", "V. Pareto", "C. Mills"),
-                "V. Pareto"));
-        questions.add(new QuizQuestion("What is a 'Polyarchy'?",
-                Arrays.asList("society with a tiny elite at the top",
-                        "the collection of billiard balls colliding with each other and with government to produce policy",
-                        "the rule of the leaders of several groups who have reached stable understandings with each other",
-                        "all the mentioned"),
-                "the rule of the leaders of several groups who have reached stable understandings with each other"));
-        questions.add(new QuizQuestion("Choose the right explanation of trait theory:",
-                Arrays.asList("concentrates on the qualities and traits of leaders",
-                        "emphasizes that the leader provides benefits to his followers",
-                        "believes that leadership emerges from the situation and is influenced by the situation",
-                        "focuses on the actions of leaders and holds that other leaders are able to imitate similar actions"),
-                "concentrates on the qualities and traits of leaders"));
-        questions.add(new QuizQuestion("What is democratic leadership?",
-                Arrays.asList("when the leaders give directives with little input",
-                        "is a collective leadership system that allows for various contributions",
-                        "when the leader challenges his followers to achieve objectives",
-                        "is an approach that emphasizes responding to situations as they occur"),
-                "is a collective leadership system that allows for various contributions"));
-        questions.add(new QuizQuestion("When was the cult of personality popularized?",
-                Arrays.asList("when Napoleon III seized power in France",
-                        "when Stalin decided to embalm Lenin’s corpse",
-                        "when Augustus started deifying emperors",
-                        "when Nikita Khrushchev denounced the cult of personality surrounding Stalin"),
-                "when Nikita Khrushchev denounced the cult of personality surrounding Stalin"));
-        questions.add(new QuizQuestion("Which tool did Stalin use in order to increase his popularity among society?",
-                Arrays.asList("he released his own \"Short Biography\"",
-                        "he printed a coin with his name",
-                        "he erected a monument of himself",
-                        "he gave money to those in need"),
-                "he released his own \"Short Biography\""));
-        questions.add(new QuizQuestion("Which statement best describes the view of the author?",
-                Arrays.asList("Stalin's methods of increasing his popularity were ineffective",
-                        "Stalin aimed to increase credibility and authority",
-                        "Stalin clearly viewed charismatic leadership as a way to bolster the Soviet system",
-                        "Stalin didn't have any features of the 'Cult of Personality'"),
-                "Stalin clearly viewed charismatic leadership as a way to bolster the Soviet system"));
+        questions.add(new QuizQuestion("What will the following code produce?\n" +
+                "\n" +
+                "t = (1, [2, 3], 4)  \n" +
+                "t[1].append(5)  \n" +
+                "print(t)",
+                Arrays.asList("(1, [2, 3], 4) ",
+                        "(1, [2, 3, 5], 4)",
+                        "(1, 2, 3, 4, 5)",
+                        "Throws an error"),
+                "(1, [2, 3, 5], 4)"));
 
-        // QUIZ 4
-        questions.add(new QuizQuestion("The word 'ideologie' first made its appearance in French, when introduced by A.-L.C. Destutt de Tracy. What historical event led to that?",
-                Arrays.asList("French Revolution", "Industrial Revolution", "World War I", "World War II"),
-                "French Revolution"));
-        questions.add(new QuizQuestion("A political ideology is",
-                Arrays.asList("An answer to the question \"who gets what, when, and how.\"",
-                        "A set of principles, laws, ideas, and procedures relating to a particular form of government.",
-                        "A coherent set of views on politics and the role of the government.",
-                        "All mentioned"),
-                "A coherent set of views on politics and the role of the government."));
-        questions.add(new QuizQuestion("Which belief best describes nationalism?",
-                Arrays.asList("The belief that inequalities in the economy destroy any equality in politics",
-                        "The belief that one’s nation is great",
-                        "The belief in the innate goodness of the individual",
-                        "The belief that one person is chosen by God to rule over the rest"),
-                "The belief that one’s nation is great"));
-        questions.add(new QuizQuestion("What type of political ideology focuses on tradition and inherited practices?",
-                Arrays.asList("Conservatism", "Socialism", "Liberalism", "Nationalism"),
-                "Conservatism"));
-        questions.add(new QuizQuestion("The core ideas of liberalism are:",
-                Arrays.asList("tradition, human imperfection, society, hierarchy, authority, and property",
-                        "nations, self-determination, nation-states, racism, and internationalism",
-                        "ecology, environmental ethics, environmental consciousness",
-                        "freedom, individualism, rationalism, the liberal state, and social justice"),
-                "freedom, individualism, rationalism, the liberal state, and social justice"));
-        questions.add(new QuizQuestion("Which of the following is not a factor of political socialization?",
-                Arrays.asList("Family", "Education", "Media", "All mentioned"),
-                "All mentioned"));
-        questions.add(new QuizQuestion("Which of the following types of political culture identified by Almond and Verba are interested in politics, but citizens have low cognitive, effective, and evaluative orientation in the political system?",
-                Arrays.asList("Subject", "Parochial", "Participant", "All mentioned"),
-                "Parochial"));
-        questions.add(new QuizQuestion("Which things determine political culture?",
-                Arrays.asList("People's orientation", "The attitudes of the people", "Their role", "All mentioned"),
-                "All mentioned"));
-        questions.add(new QuizQuestion("Which ideology is most compatible with individualistic political culture?",
-                Arrays.asList("Conservatism", "Liberalism", "Feminism", "Socialism"),
-                "Liberalism"));
-        questions.add(new QuizQuestion("Bobbio argued that the fundamental basis for the distinction between left and right political ideologies lies in:",
-                Arrays.asList("differing attitudes to equality", "attitudes to political change", "attitudes to economic organization", "the role of the state"),
-                "differing attitudes to equality"));
+        questions.add(new QuizQuestion("Which of the following operations will modify the list?\n" +
+                "\n" +
+                "x = [1, 2, 3]",
+                Arrays.asList("x.append(4)",
+                        "y = x + [4]",
+                        "x = x * 2",
+                        "z = sorted(x)"),
+                "x.append(4)"));
 
-        // QUIZ 5
-        questions.add(new QuizQuestion("What was the relationship found between left-wing political orientation and social distancing attitudes (N. Terry et al, 2022)?",
-                Arrays.asList("No significant relationship was found",
-                        "Left-wing political orientation was associated with more positive and less negative social distancing attitudes",
-                        "Left-wing political orientation was associated with more negative and less positive social distancing attitudes",
-                        "There was a stronger association between right-wing political orientation and positive social distancing attitudes"),
-                "Left-wing political orientation was associated with more positive and less negative social distancing attitudes"));
-        questions.add(new QuizQuestion("What were the significant correlations found between political orientation and endorsement of moral foundations (H. Terry et al, 2022)?",
-                Arrays.asList("There were no significant correlations found",
-                        "Left-wing political orientation was positively associated with endorsement of binding foundations and economic liberty items",
-                        "Left-wing political orientation was positively associated with endorsement of individualizing moral foundations and negatively associated with binding foundations and economic liberty items",
-                        "Left-wing political orientation was associated with more negative social distancing attitudes"),
-                "Left-wing political orientation was positively associated with endorsement of individualizing moral foundations and negatively associated with binding foundations and economic liberty items"));
-        questions.add(new QuizQuestion("What political theory advocates for maximizing the greatest happiness of the greatest number?",
-                Arrays.asList("Utilitarianism", "Conservatism", "Marxism", "Feminism"),
-                "Utilitarianism"));
-        questions.add(new QuizQuestion("Who is considered as a founder of classical utilitarianism?",
-                Arrays.asList("Karl Marx", "Jeremy Bentham", "Jean-Jacques Rousseau", "Edmund Burke"),
-                "Jeremy Bentham"));
-        questions.add(new QuizQuestion("What concept is at the core of the Marxist tradition?",
-                Arrays.asList("Content with the government", "ANirm the traditions that you've inherited", "Exploitation of working class", "The principle of aNected interest"),
-                "Exploitation of working class"));
-        questions.add(new QuizQuestion("What is the Social Contract political theory?",
-                Arrays.asList("Uniting or eliminating exploitation", "The idea of agreement or consent as the basis for government", "Maximizing the greatest happiness of the greatest number", "ANirm the traditions that you've inherited"),
-                "The idea of agreement or consent as the basis for government"));
-        questions.add(new QuizQuestion("What political theory best describes a society where people give up individual freedom in exchange for peace and protection?",
-                Arrays.asList("Utilitarianism", "Marxism", "Democracy", "Social Contract"),
-                "Social Contract"));
-        questions.add(new QuizQuestion("Select the political theorists of Social Contract?",
-                Arrays.asList("J. Bentham and J. S. Mill", "K. Marx and F. Engels", "T. Hobbes and J. J. Rousseau", "E. Burke and P. M. Foucault"),
-                "T. Hobbes and J. J. Rousseau"));
-        questions.add(new QuizQuestion("In which experiment is the problem of obedience to authority considered (\"How Far Will You Go to Obey an Order?\")?",
-                Arrays.asList("Milgram's obedience experiment", "Stanford Prison Experiment", "Univers - 25: The Mouse ‘Utopia’ Experiment", "All the mentioned"),
-                "Milgram's obedience experiment"));
-        questions.add(new QuizQuestion("How does left/right of the political spectrum affect moral foundations of people (H. Terry et al, 2022)?",
-                Arrays.asList("Those on the left more heavily endorse care and fairness",
-                        "Those on the right tend to endorse individualizing foundations",
-                        "Those on the left tend to support binding foundations",
-                        "Those on the left more strongly endorsing the economic liberty items, and a lack of difference on lifestyle liberty"),
-                "Those on the left more heavily endorse care and fairness"));
+        questions.add(new QuizQuestion("What is a variable in Python?",
+                Arrays.asList("A location in memory to store data",
+                        "A function",
+                        "A reserved word",
+                        "A data type"),
+                "A location in memory to store data"));
 
-        // QUIZ 6
-        questions.add(new QuizQuestion("Political regime can be divided into:",
-                Arrays.asList("democracy, totalitarianism, authoritarianism", "unitary, federal, confederal", "monarchy and democracy", "first, second, third"),
-                "democracy, totalitarianism, authoritarianism"));
-        questions.add(new QuizQuestion("Choose the relevant definition of civil society:",
-                Arrays.asList("a realm where citizens associate according to their own interests and wishes",
-                        "a set of rules and practices that inform relationships",
-                        "an organized group seeking to influence public policy",
-                        "organizations that claim a monopoly on violence"),
-                "a realm where citizens associate according to their own interests and wishes"));
-        questions.add(new QuizQuestion("What is a political institution?",
-                Arrays.asList("Social institutions including the state, parties, and public organizations",
-                        "Organizations in government that create and enforce laws",
-                        "Organizations that mediate conflict and provide representation",
-                        "All of the mentioned"),
-                "All of the mentioned"));
-        questions.add(new QuizQuestion("What is a state?",
-                Arrays.asList("A set of rules that inform relationships",
-                        "A political organization with functions including security and revenue",
-                        "An organized group aiming to influence public policy",
-                        "A realm of autonomous groups"),
-                "A political organization with functions including security and revenue"));
-        questions.add(new QuizQuestion("Choose the definition of natural theory of state’s origin:",
-                Arrays.asList("The state is established by God(s)",
-                        "Where one group forced all people to obey",
-                        "Where the state evolved from lower associations (household/family)",
-                        "State is an artificial institution from a social contract"),
-                "Where the state evolved from lower associations (household/family)"));
-        questions.add(new QuizQuestion("What are the main characteristics of the state?",
-                Arrays.asList("Population, Territory, Sovereignty",
-                        "Territory, Sovereignty",
-                        "Sovereignty, Legitimacy, Organization",
-                        "Sovereignty, Legitimacy, Organization, Population, Territory"),
-                "Sovereignty, Legitimacy, Organization, Population, Territory"));
-        questions.add(new QuizQuestion("According to history, economic structure, and economic organization states are divided into:",
-                Arrays.asList("first, second, third world countries", "monarchy and republic", "unitary and federal", "totalitarian, authoritarian, democratic"),
-                "first, second, third world countries"));
-        questions.add(new QuizQuestion("What is a monarchy?",
-                Arrays.asList("When the head of State is chosen by citizens",
-                        "States create different divisions of government",
-                        "A form of government where all citizens have equal say",
-                        "Sovereignty embodied in a single individual"),
-                "Sovereignty embodied in a single individual"));
-        questions.add(new QuizQuestion("What are the types of Democracy:",
-                Arrays.asList("Direct and representative", "Direct and constitutional", "Direct, representative, mixed", "Direct, constitutional, mixed"),
-                "Direct and representative"));
-        questions.add(new QuizQuestion("Choose the three branches of governmental power:",
-                Arrays.asList("Civil society, political party, unions",
-                        "Legislative, executive, judicial",
-                        "President, monarch, prime minister",
-                        "Direct, indirect, representative"),
-                "Legislative, executive, judicial"));
+        questions.add(new QuizQuestion("What will be the result of the following code?\n" +
+                "\n" +
+                "x = (1, 2, 3)  \n" +
+                "y = (1, 2, [3])  \n" +
+                "z = y  \n" +
+                "y[2].append(4)  \n" +
+                "print(z)",
+                Arrays.asList("(1, 2, [3, 4])",
+                        "(1, 2, [3])",
+                        "(1, 2, 3, 4)",
+                        "Throws a TypeError"),
+                "(1, 2, [3, 4])"));
 
-        // QUIZ 7
-        questions.add(new QuizQuestion("What is a political party?",
-                Arrays.asList("A group identified by name and ideology that fields candidates at elections",
-                        "A general term for election rules",
-                        "A set of rules for relationships",
-                        "A realm where citizens associate by interests"),
-                "A group identified by name and ideology that fields candidates at elections"));
-        questions.add(new QuizQuestion("According to Edmund Burke, a political party:",
-                Arrays.asList("Advances the interests of a particular group",
-                        "Is a body of men united for promoting national interests",
-                        "Focuses the political feelings of its citizens",
-                        "Is necessary for democracy"),
-                "Is a body of men united for promoting national interests"));
-        questions.add(new QuizQuestion("According to Maurice Duverger, what are the types of parties?",
-                Arrays.asList("Direct and indirect parties",
-                        "Mono and multi parties",
-                        "Short and long-term parties",
-                        "Mass and cadre (elite) parties"),
-                "Mass and cadre (elite) parties"));
-        questions.add(new QuizQuestion("What is the main purpose of catch-all parties?",
-                Arrays.asList("To govern in the national interest", "To represent social groups", "To gather people around one ideology", "To fight with other parties"),
-                "To govern in the national interest"));
-        questions.add(new QuizQuestion("What functions of parties were distinguished by Avron Morse?",
-                Arrays.asList("Education and organization of public opinion/administration of government",
-                        "Union, recruitment",
-                        "Enthusiasm, instruction",
-                        "Mobilizing citizens and recruiting leaders"),
-                "Education and organization of public opinion/administration of government"));
-        questions.add(new QuizQuestion("What is a party system?",
-                Arrays.asList("Interactions of parties with each other",
-                        "Party system is the same as party",
-                        "Hierarchy between parties",
-                        "Classification of parties"),
-                "Interactions of parties with each other"));
-        questions.add(new QuizQuestion("Types of party system:",
-                Arrays.asList("Single party, two-party", "No-party, single party, dominant party, two-party, multi-party", "No-party, single party, dominant party", "No-party, single party, two-party, multi-party"),
-                "No-party, single party, dominant party, two-party, multi-party"));
-        questions.add(new QuizQuestion("What is an Electoral System?",
-                Arrays.asList("A general term for the rules governing an election",
-                        "A group identified by name and ideology",
-                        "An association that presumes government for policies it favors",
-                        "An organization with rules for relationships"),
-                "A general term for the rules governing an election"));
-        questions.add(new QuizQuestion("According to Ian Shapiro on Political Parties, Weak parties:",
-                Arrays.asList("Retail, not wholesale campaigning",
-                        "Candidates and party platforms controlled from below",
-                        "Legislative leaders cannot set the agenda",
-                        "All the mentioned"),
-                "All the mentioned"));
-        questions.add(new QuizQuestion("According to Ian Shapiro on Political Parties, characteristics of strong parties:",
-                Arrays.asList("Unified, centralized, stable, organizationally complex",
-                        "Leaders have enough rope to hang themselves",
-                        "Everyone is one team",
-                        "All the mentioned"),
-                "All the mentioned"));
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "x = 0  \n" +
+                "if x:  \n" +
+                "    print(\"Non-zero\")  \n" +
+                "elif not x:  \n" +
+                "    print(\"Zero\")  \n" +
+                "else:  \n" +
+                "    print(\"Undefined\")",
+                Arrays.asList("Throws an error",
+                        "Zero",
+                        "Non-zero",
+                        "Undefined"),
+                "Zero"));
 
-        // QUIZ 8
-        questions.add(new QuizQuestion("According to Primbistrow et al, 2022, why does energy consumption negatively impact environmental deterioration in Kazakhstan?",
-                Arrays.asList("Because more than 90% of Kazakhstan’s energy demand is fulfilled by fossil fuels",
-                        "Because economic globalization contributes to environmental degradation",
-                        "Because social globalization negatively impacts carbon emissions",
-                        "Because energy consumption is not a major contributor"),
-                "Because more than 90% of Kazakhstan’s energy demand is fulfilled by fossil fuels"));
-        questions.add(new QuizQuestion("What is the relationship between economic and political globalization and carbon emissions in Kazakhstan (Primbistrow et al, 2022)?",
-                Arrays.asList("Economic and political globalization have a negative and substantial impact on carbon emissions",
-                        "Economic and political globalization have a positive impact on carbon emissions",
-                        "Economic globalization has a negative impact while political has a positive impact",
-                        "Economic and political globalization do not have any impact"),
-                "Economic and political globalization have a negative and substantial impact on carbon emissions"));
-        questions.add(new QuizQuestion("Select the argument against globalization:",
-                Arrays.asList("The world economy is more interdependent than ever",
-                        "Globalization is merely a buzzword to denote the latest phase of capitalism",
-                        "People are beginning to “think globally and act locally”",
-                        "Electronic communications alter our notions of social groups"),
-                "Globalization is merely a buzzword to denote the latest phase of capitalism"));
-        questions.add(new QuizQuestion("What does ‘bipolarity’ mean in world politics?",
-                Arrays.asList("The presence or rivalry between two superpowers",
-                        "The hegemony of one hyperpower state",
-                        "The presence or rivalry between three or more superpowers",
-                        "The notion of the world as a united polity"),
-                "The presence or rivalry between two superpowers"));
-        questions.add(new QuizQuestion("The adoption of the practices and culture of western Europe by societies in other parts of the world is called:",
-                Arrays.asList("globalization", "westernization", "modernization", "urbanization"),
-                "westernization"));
-        questions.add(new QuizQuestion("The process by which ideas, knowledge, information, goods and services spread around the world is called:",
-                Arrays.asList("globalization", "westernization", "modernization", "urbanization"),
-                "globalization"));
-        questions.add(new QuizQuestion("Set of related theories of international relations emphasizing the role of the state, national interest, and power is:",
-                Arrays.asList("Idealism", "Bipolarity", "Realism", "Unipolarity"),
-                "Realism"));
-        questions.add(new QuizQuestion("The transformation from a traditional, rural, agrarian society to a secular, urban, industrial society is called:",
-                Arrays.asList("globalization", "westernization", "modernization", "urbanization"),
-                "modernization"));
-        questions.add(new QuizQuestion("A system of world order in which global influences are held between two states is called:",
-                Arrays.asList("Idealism", "Bipolarity", "Realism", "Unipolarity"),
-                "Bipolarity"));
-        questions.add(new QuizQuestion("What is the scale effect of globalization (Primbetova et al, 2022)?",
-                Arrays.asList("It refers to the improvement of economic activity",
-                        "It refers to the increase in aggregate level of natural resources and environmental degradation",
-                        "It refers to the rise in environmental consciousness",
-                        "It refers to the increase in private environmental spending"),
-                "It refers to the increase in aggregate level of natural resources and environmental degradation"));
+        questions.add(new QuizQuestion("Evaluate the following complex logical operation:\n" +
+                "\n" +
+                "x = True  \n" +
+                "y = False  \n" +
+                "z = x or y and not x  \n" +
+                "print(z)",
+                Arrays.asList("True",
+                        "None",
+                        "Throws an error",
+                        "False"),
+                "True"));
 
-        // QUIZ 9
-        questions.add(new QuizQuestion("How technologies impact on Politics?",
-                Arrays.asList("Technology as a tool for political actors",
-                        "Technology as a political topic and campaign platform",
-                        "Technology as a tool for the public",
-                        "All the mentioned"),
-                "All the mentioned"));
-        questions.add(new QuizQuestion("According to Aday how social media impact on democracy?",
-                Arrays.asList("Promotes freedom of expression",
-                        "Promotes hate and extreme views and in some cases violence",
-                        "They allow for the rampant spread of misinformation",
-                        "All the mentioned"),
-                "Promotes freedom of expression"));
-        questions.add(new QuizQuestion("What is Disinformation?",
-                Arrays.asList("The intentionally false meaning, which actors spread and know to be false",
-                        "An unfair negative attitude toward a social group or a member of that group",
-                        "Is information that is false, but the person who is disseminating it believes that it is true",
-                        "All the mentioned"),
-                "The intentionally false meaning, which actors spread and know to be false"));
-        questions.add(new QuizQuestion("What is the difference between cyber security and information security?",
-                Arrays.asList("Cyber security usually deals with cybercrimes, information security involves the safety of computer systems",
-                        "Cyber security is all about protecting data that is found in electronic form, information security means protecting information and information systems from unauthorized access",
-                        "Cyber security provides confidentiality, integrity and availability of information, information security means protecting the data in cyberspace",
-                        "Cyber security and information security are synonyms"),
-                "Cyber security is all about protecting data that is found in electronic form, information security means protecting information and information systems from unauthorized access"));
-        questions.add(new QuizQuestion("What does socio-political perspective means in information security?",
-                Arrays.asList("The protection of national information assets, information systems, information",
-                        "The protection of the national information environment and mass media from purposeful negative information",
-                        "The protection from unauthorized access, use, disclosure, interruption, modification",
-                        "The protection from unauthorized verification, data recording"),
-                "The protection of the national information environment and mass media from purposeful negative information"));
-        questions.add(new QuizQuestion("Why Social media have played a crucial role in political conflicts in the Middle East?",
-                Arrays.asList("Facilitated the mobilization of demonstrators",
-                        "Empowered political activists",
-                        "Speeded-up the process of democratization",
-                        "All the mentioned"),
-                "All the mentioned"));
-        questions.add(new QuizQuestion("According to Gunawan and Ratmono what had a significant negative impact on the Indonesian elections?",
-                Arrays.asList("Hacking attacks",
-                        "Disinformation and propaganda",
-                        "Hoaxes and hate speech",
-                        "All the mentioned"),
-                "Hoaxes and hate speech"));
-        questions.add(new QuizQuestion("The rank of Kazakhstan in Global cybersecurity index 2020?",
-                Arrays.asList("5", "31", "115", "194"),
-                "31"));
-        questions.add(new QuizQuestion("What is the MAIN threat of cyberspace for Russia, Kazakhstan and China?",
-                Arrays.asList("Destabilization of political environments by disinformation",
-                        "Monopolization the market",
-                        "The criminal purposes, including the commission of computer crimes and various types of fraud",
-                        "Computer attacks on information infrastructure"),
-                "Destabilization of political environments by disinformation"));
-        questions.add(new QuizQuestion("According to Craig and Valeriano what is the most dominant actors in the cyberspace?",
-                Arrays.asList("Non-governmental organizations",
-                        "Private military organizations",
-                        "Terrorist groups",
-                        "States"),
-                "States"));
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "s1 = {1, 2, 3}  \n" +
+                "s2 = {3, 4, 5}  \n" +
+                "print(s1 & s2)",
+                Arrays.asList("{3}",
+                        "Throws an error",
+                        "{1, 2, 3, 4, 5}",
+                        "{}"),
+                "{3}"));
 
-        // QUIZ 10
-        questions.add(new QuizQuestion("How many branches of power are there in Kazakhstan?",
-                Arrays.asList("Two",
-                        "Three",
-                        "Four",
-                        "Five"),
-                "Three"));
-        questions.add(new QuizQuestion("Which branch of power determines the main directions of domestic and foreign policy in Kazakhstan?",
-                Arrays.asList("Legislative branch",
-                        "Executive branch",
-                        "Judicial branch",
-                        "None of the above"),
-                "Executive branch"));
-        questions.add(new QuizQuestion("What is the role of the President of Kazakhstan?",
-                Arrays.asList("Head of the legislative branch",
-                        "Head of the executive branch",
-                        "Head of the judicial branch",
-                        "Head of the military"),
-                "Head of the executive branch"));
-        questions.add(new QuizQuestion("What are the names of the two chambers of the Parliament in Kazakhstan?",
-                Arrays.asList("Senate and Assembly",
-                        "Congress and Senate",
-                        "Majilis and Senate",
-                        "House of Representatives and Senate"),
-                "Majilis and Senate"));
-        questions.add(new QuizQuestion("How often are members of the Senate re-elected?",
-                Arrays.asList("Every year",
-                        "Every two years",
-                        "Every three years",
-                        "Every five years"),
-                "Every three years"));
-        questions.add(new QuizQuestion("How many deputies are there in the Majilis?",
-                Arrays.asList("69",
-                        "79",
-                        "89",
-                        "98"),
-                "98"));
-        questions.add(new QuizQuestion("What is the main characteristic of disenchanted citizens?",
-                Arrays.asList("They actively participate in the political process.",
-                        "They have positive views about democratic institutions.",
-                        "They feel disillusioned with the political system.",
-                        "They engage in online activism."),
-                "They feel disillusioned with the political system."));
-        questions.add(new QuizQuestion("Which group of citizens is less visible in their political engagement?",
-                Arrays.asList("Nostalgic citizens.", "Enthusiastic citizens.", "Civic citizens.", "Stealth citizens."),
-                "Stealth citizens."));
-        questions.add(new QuizQuestion("What do civic citizens in Kazakhstan demonstrate?",
-                Arrays.asList("Trust in the political system and its democratic credentials.",
-                        "A strong longing for the past.",
-                        "Optimism and eagerness towards community involvement.",
-                        "A sense of apathy or disengagement from politics."),
-                "Trust in the political system and its democratic credentials."));
-        questions.add(new QuizQuestion("Which international organization is Kazakhstan a member of in its efforts to combat terrorism and extremism?",
-                Arrays.asList("United Nations Security Council",
-                        "Organization for Security and Cooperation in Europe (OSCE)",
-                        "Shanghai Cooperation Organization (SCO)",
-                        "World Trade Organization (WTO)"),
-                "Shanghai Cooperation Organization (SCO)"));
+        questions.add(new QuizQuestion("What is the output of this nested loop?\n" +
+                "\n" +
+                "for i in range(3):  \n" +
+                "    for j in range(2):  \n" +
+                "        if i == j:  \n" +
+                "            break  \n" +
+                "        print(f\"{i},{j}\", end=\" \")",
+                Arrays.asList("0,0 1,1 2,2",
+                        "No output",
+                        "0,1 0,1 1,2 0,2 1,0 2,1",
+                        "1,0 2,0 2,1"),
+                "1,0 2,0 2,1"));
 
-        // политика.pdf
-        questions.add(new QuizQuestion("What term refers to the method by which votes are translated into seats in an election?",
-                Arrays.asList("Electoral system", "Voting system", "Representation system", "Proportional system"),
-                "Electoral system"));
-        questions.add(new QuizQuestion("What is the nature of the control a state exercises over a population?",
-                Arrays.asList("Authoritarian control", "Coercive control", "Voluntary control", "Democratic control"),
-                "Coercive control"));
-        questions.add(new QuizQuestion("What is a unipolar system?",
-                Arrays.asList("A system where two superpowers dominate", "A system with a single dominant power", "A system based on regional cooperation", "A system where no power dominates"),
-                "A system with a single dominant power"));
-        questions.add(new QuizQuestion("Which of the following best describes a bipolar system?",
-                Arrays.asList("A system with multiple dominant powers", "A world with no clear power centers", "A rivalry between two superpowers", "The cooperation of several equal states"),
-                "A rivalry between two superpowers"));
-        questions.add(new QuizQuestion("How many branches of power are there in Kazakhstan?",
-                Arrays.asList("Four", "Two", "Five", "Three"),
-                "Three"));
-        questions.add(new QuizQuestion("What is the main purpose of the system of checks and balances in government?",
-                Arrays.asList("To concentrate power in one branch of government", "To ensure the dominance of the executive branch", "To limit the role of the judiciary branch", "To prevent abuses of power and maintain accountability"),
-                "To prevent abuses of power and maintain accountability"));
-        questions.add(new QuizQuestion("Which of the following is an example of a political institution?",
-                Arrays.asList("Religious faith", "Trade union", "Family", "State"),
-                "State"));
-        questions.add(new QuizQuestion("What type of party typically has a large membership organized in local branches?",
-                Arrays.asList("Elite party", "Mass party", "Cadre party", "Catch-all party"),
-                "Mass party"));
-        questions.add(new QuizQuestion("Which type of parties originated outside legislatures and aimed to achieve policy objectives?",
-                Arrays.asList("Mass parties", "Catch-all parties", "Elite parties", "Cadre parties"),
-                "Mass parties"));
-        questions.add(new QuizQuestion("Who recognized the growing importance of political parties in modern politics?",
-                Arrays.asList("Robert Michels", "Maurice Duverger", "Edmund Burke", "Moisei Ostrogorski"),
-                "Maurice Duverger"));
-        questions.add(new QuizQuestion("Which countries are examples of single-party or one-party states?",
-                Arrays.asList("Saudi Arabia, China, and Cuba", "North Korea, China, and Cuba", "Saudi Arabia, North Korea, and China", "South Africa, North Korea, and China"),
-                "North Korea, China, and Cuba"));
-        questions.add(new QuizQuestion("Which theory proposes that the state is established by God(s)?",
-                Arrays.asList("Patriarchal theory", "Voluntaristic theory", "Divine theory", "Coercive theory"),
-                "Divine theory"));
-        questions.add(new QuizQuestion("Which theory suggests that states emerged from family structures?",
-                Arrays.asList("Patriarchal theory", "Divine theory", "Social contract theory", "Coercive theory"),
-                "Patriarchal theory"));
-        questions.add(new QuizQuestion("During which period did civil society in Kazakhstan experience significant development?",
-                Arrays.asList("After independence", "1985-1991", "None of the above", "Before 1985"),
-                "After independence"));
-        questions.add(new QuizQuestion("In what way did ex-US President Barack Obama utilize technology for his presidential campaigns?",
-                Arrays.asList("By using web-based campaigns and data analytics", "By blocking tech acquisitions for national security reasons", "By eliminating the use of technology in his campaigns", "By organizing mass protests via social media"),
-                "By using web-based campaigns and data analytics"));
-        questions.add(new QuizQuestion("What positive impact of social media did Nugroho and Syarief find in their study on contemporary Indonesia?",
-                Arrays.asList("Weakening of socio-political dynamics", "Reduction in information dissemination", "Strengthening of democratic structures", "Decrease in political participation"),
-                "Strengthening of democratic structures"));
-        questions.add(new QuizQuestion("What impact do IT advancements have on civil liberties, according to the text?",
-                Arrays.asList("They have no impact on civil liberties", "They strengthen civil liberties by promoting freedom of speech", "They enhance civil liberties by increasing access to information", "They put civil liberties at risk by endangering data privacy"),
-                "They put civil liberties at risk by endangering data privacy"));
-        questions.add(new QuizQuestion("What impact can westernization have on non-Western societies according to critics?",
-                Arrays.asList("Improvement in local governance systems", "Loss of cultural identity and values", "Strengthening of traditional crafts", "Increase in economic independence"),
-                "Loss of cultural identity and values"));
-        questions.add(new QuizQuestion("Which form of democracy involves people voting directly on policy initiatives?",
-                Arrays.asList("Hybrid democracy", "Oligarchic democracy", "Direct democracy", "Representative democracy"),
-                "Direct democracy"));
-        questions.add(new QuizQuestion("What term refers to the adoption of new technologies and economic development in societies?",
-                Arrays.asList("Globalization", "Westernization", "Modernization", "Urbanization"),
-                "Modernization"));
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "d = {'a': 1, 'b': 2, 'c': 3}  \n" +
+                "for key, value in d.items():  \n" +
+                "    d[key] = value + 1  \n" +
+                "print(d)",
+                Arrays.asList("{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}",
+                        "{'a': 1, 'b': 2, 'c': 3",
+                        "Throws an error",
+                        "{'a': 2, 'b': 3, 'c': 4}"),
+                "{'a': 2, 'b': 3, 'c': 4}"));
+
+        questions.add(new QuizQuestion("What is the result of the following code?\n" +
+                "\n" +
+                "s = {1, 2, 3}  \n" +
+                "s.add(2)  \n" +
+                "print(s)",
+                Arrays.asList("{1, 2, 3}",
+                        "{1, 3}",
+                        "Throws an error",
+                        "{1, 2, 3, 2}"),
+                "{1, 2, 3}"));
+
+        questions.add(new QuizQuestion("Which of the following is immutable in Python?",
+                Arrays.asList("List",
+                        "String",
+                        "Set",
+                        "Dictionary"),
+                "String"));
+
+        questions.add(new QuizQuestion("What will happen if you omit the else part in an if-else block?",
+                Arrays.asList("The else block is mandatory in Python.",
+                        "The code will execute normally if the condition is true.",
+                        "A SyntaxError will be raised.",
+                        "The code will execute only if the condition is false."),
+                "The code will execute normally if the condition is true."));
+
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "x = [1, 2, 3]  \n" +
+                "print(type(x) is list)",
+                Arrays.asList("None",
+                        "True",
+                        "Throws an error",
+                        "False"),
+                "True"));
+
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "x = 10  \n" +
+                "if x > 5:  \n" +
+                "    pass  \n" +
+                "else:  \n" +
+                "    print(\"Less than 5\")",
+                Arrays.asList("No output",
+                        "None of the answers",
+                        "Throws an error",
+                        "Less than 5"),
+                "No output"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "for i in range(1, 6):  \n" +
+                "    if i % 2 == 0:  \n" +
+                "        print(i, end=\" \")",
+                Arrays.asList("2 4",
+                        "1 2 3 4 5",
+                        "1 3 5",
+                        "2 4 6"),
+                "2 4"));
+
+        questions.add(new QuizQuestion("What is the result of the following operation?\n" +
+                "\n" +
+                "5 > 3 and 2 < 4",
+                Arrays.asList("Throws an error",
+                        "None",
+                        "False",
+                        "True"),
+                "True"));
+
+        questions.add(new QuizQuestion("What does the following code return?\n" +
+                "\n" +
+                "s = \"abcdef\"  \n" +
+                "print(s[1:-1:2])",
+                Arrays.asList("bfdc",
+                        "bd",
+                        "None",
+                        "ace"),
+                "bd"));
+
+        questions.add(new QuizQuestion("What happens if a break statement is encountered inside a for loop?",
+                Arrays.asList("The loop is terminated immediately.",
+                        "The loop continues with the next iteration.",
+                        "The program exits entirely.",
+                        "An error is raised."),
+                "The loop is terminated immediately."));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "x, y = 10, 5  \n" +
+                "print(x != y or x == 10)",
+                Arrays.asList("False",
+                        "True",
+                        "None",
+                        "Throws an error"),
+                "True"));
+
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "i = 1  \n" +
+                "while i < 10:  \n" +
+                "    if i == 5:  \n" +
+                "        break  \n" +
+                "    print(i, end=\" \")  \n" +
+                "    i += 2  ",
+                Arrays.asList("1 3 5",
+                        "1 3 and terminates at 5",
+                        "None",
+                        "Throws an error"),
+                "1 3 and terminates at 5"));
+
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "list = [1, 2, 3, 4, 5]  \n" +
+                "i = 1  \n" +
+                "while i < 2:  \n" +
+                "    print(\"\n" +
+                "\".join(map(str, list)))  \n" +
+                "    i += 1",
+                Arrays.asList("Throws an error",
+                        "1 1",
+                        "1, 2, 3, 4, 5",
+                        "1 \n 2 \n 3 \n 4 \n 5"),
+                "1 \n 2 \n 3 \n 4 \n 5"));
+
+        questions.add(new QuizQuestion("What will happen if the following code is executed?\n" +
+                "\n" +
+                "d = {'a': 1, 'b': 2, 'c': 3}  \n" +
+                "d['d'] = 4  \n" +
+                "print(d)",
+                Arrays.asList("Throws an error",
+                        "{'a': 1, 'b': 2, 'c': 3, 'd': 4}",
+                        "{'a': 1, 'b': 2, 'c': 3}",
+                        "None"),
+                "{'a': 1, 'b': 2, 'c': 3, 'd': 4}"));
+
+        questions.add(new QuizQuestion("What is the output of this conditional expression?\n" +
+                "\n" +
+                "x = 7  \n" +
+                "result = \"Even\" if x % 2 == 0 else \"Odd\"  \n" +
+                "print(result)",
+                Arrays.asList("Even",
+                        "None",
+                        "Odd",
+                        "7"),
+                "Odd"));
+
+        questions.add(new QuizQuestion("What will be the output of this code?\n" +
+                "\n" +
+                "from functools import reduce\n" +
+                "result = reduce(lambda x, y: x + y, [])",
+                Arrays.asList("Error",
+                        "None",
+                        "No output",
+                        "[]"),
+                "Error"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "class A:\n" +
+                "    def display(self):\n" +
+                "        return \"A\"\n" +
+                "\n" +
+                "class B(A):\n" +
+                "    def display(self):\n" +
+                "        return \"B\"\n" +
+                "\n" +
+                "obj = B()\n" +
+                "print(obj.display())",
+                Arrays.asList("B",
+                        "A",
+                        "Error",
+                        "No output"),
+                "B"));
+
+        questions.add(new QuizQuestion("What will this code produce?\n" +
+                "\n" +
+                "nums = [1, 2, 3, 4, 5]\n" +
+                "result = list(filter(lambda x: x % 2, nums))\n" +
+                "print(result)",
+                Arrays.asList("[2, 4]",
+                        "No output",
+                        "Error",
+                        "[1, 3, 5]"),
+                "[1, 3, 5]"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "def my_decorator(func):\n" +
+                "    def wrapper():\n" +
+                "        print(\"Before function call\")\n" +
+                "        func()\n" +
+                "        print(\"After function call\")\n" +
+                "    return wrapper\n" +
+                "\n" +
+                "@my_decorator\n" +
+                "def say_hello():\n" +
+                "    print(\"Hello!\")\n" +
+                "\n" +
+                "say_hello()",
+                Arrays.asList("No output",
+                        "Print \"After function call\" first",
+                        "Print \"Hello!\" only",
+                        "Print \"Before function call\", \"Hello!\", \"After function call\""),
+                "Print \"Before function call\", \"Hello!\", \"After function call\""));
+
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "class Parent:\n" +
+                "    def greet(self):\n" +
+                "        print(\"Hello from Parent\")\n" +
+                "\n" +
+                "class Child(Parent):\n" +
+                "    pass\n" +
+                "\n" +
+                "obj = Child()\n" +
+                "obj.greet()",
+                Arrays.asList("Error: Child must implement greet()",
+                        "\"Hello from Parent\"",
+                        "None",
+                        "\"Hello from Child\""),
+                "\"Hello from Parent\""));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "def mystery(n):\n" +
+                "    if n == 0:\n" +
+                "        return 1\n" +
+                "    return n * mystery(n - 1)\n" +
+                "\n" +
+                "print(mystery(5))",
+                Arrays.asList("120",
+                        "25",
+                        "5",
+                        "Error"),
+                "120"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "nums = [1, 2, 3, 4]\n" +
+                "result = map(lambda x: x * 2, filter(lambda y: y % 2, nums))\n" +
+                "print(list(result))",
+                Arrays.asList("[4, 8]",
+                        "[1, 6]",
+                        "[2, 6]",
+                        "No output"),
+                "[2, 6]"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "def func(a, b=5, c=10):\n" +
+                "    return a + b + c\n" +
+                "\n" +
+                "print(func(1, c=20))",
+                Arrays.asList("35",
+                        "Error",
+                        "16",
+                        "26"),
+                "26"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "nums = [0, 1, -1, 2, -2, 3, 0, -2]\n" +
+                "result = filter(lambda x: x and x > 0, nums)\n" +
+                "print(list(result))",
+                Arrays.asList("Error",
+                        "[1, 2, 3]",
+                        "[0, 1, 2, 3]",
+                        "[-1, -2]"),
+                "[1, 2, 3]"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "from functools import reduce\n" +
+                "\n" +
+                "class Item:\n" +
+                "    def __init__(self, price):\n" +
+                "        self.__price = price\n" +
+                "\n" +
+                "    def get_price(self):\n" +
+                "        return self.__price\n" +
+                "\n" +
+                "x1 = Item(1.5)\n" +
+                "x2 = Item(1)\n" +
+                "x3 = Item(3.5)\n" +
+                "\n" +
+                "cart = [x1, x2, x3]\n" +
+                "budget = 10\n" +
+                "\n" +
+                "money_left = reduce(lambda acc, x: acc - x.get_price(), cart, budget)\n" +
+                "\n" +
+                "print(money_left)",
+                Arrays.asList("4.0",
+                        "6.0",
+                        "No output",
+                        "Error"),
+                "4.0"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "nums = [1, 2, 3, 4]\n" +
+                "result = filter(lambda x: x % 2, map(lambda y: y * 2, nums))\n" +
+                "print(list(result))",
+                Arrays.asList("[]",
+                        "Error",
+                        "[4, 8]",
+                        "[2, 4, 6, 8]"),
+                "[]"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "from functools import reduce\n" +
+                "\n" +
+                "class A:\n" +
+                "    def __init__(self, nums):\n" +
+                "        self.nums = nums\n" +
+                "\n" +
+                "    def multiply(self):\n" +
+                "        return reduce(lambda x, y: x * y, self.nums)\n" +
+                "\n" +
+                "obj = A([1, 2, 3, 4])\n" +
+                "print(obj.multiply())",
+                Arrays.asList("24",
+                        "10",
+                        "[1, 2, 3, 4]",
+                        "Error"),
+                "24"));
+
+        questions.add(new QuizQuestion("Polymorphism in Python allows:",
+                Arrays.asList("Functional programming",
+                        "Multiple inheritance",
+                        "Secure data encapsulation",
+                        "Methods to have the same name but different implementations"),
+                "Methods to have the same name but different implementations"));
+
+        questions.add(new QuizQuestion("Given the following code, what is the output?\n" +
+                "\n" +
+                "class A:\n" +
+                "    def show(self):\n" +
+                "        return \"Class A\"\n" +
+                "\n" +
+                "class B(A):\n" +
+                "    pass\n" +
+                "\n" +
+                "obj = B()\n" +
+                "print(obj.show())",
+                Arrays.asList("Class B",
+                        "Class A",
+                        "Error",
+                        "No output"),
+                "Class A"));
+
+        questions.add(new QuizQuestion("What is the output of this code?\n" +
+                "\n" +
+                "nums = [1, 2, 3]\n" +
+                "result = map(lambda x: x ** 2, nums)\n" +
+                "print(result)",
+                Arrays.asList("[1, 4, 9]",
+                        "No output",
+                        "None",
+                        "<map object>"),
+                "<map object>"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "def decorator(func):\n" +
+                "    def wrapper():\n" +
+                "        print(\"Inside wrapper\")\n" +
+                "    return wrapper\n" +
+                "\n" +
+                "@decorator\n" +
+                "def greet():\n" +
+                "    print(\"Hello!\")\n" +
+                "\n" +
+                "greet()",
+                Arrays.asList("Error",
+                        "\"Hello!\"",
+                        "\"Inside wrapper\"",
+                        "No output"),
+                "\"Inside wrapper\""));
+
+        questions.add(new QuizQuestion("What will happen if you pass a string as the iterable to reduce()?\n" +
+                "\n" +
+                "from functools import reduce\n" +
+                "result = reduce(lambda x, y: x + y, \"abc\")",
+                Arrays.asList("\"a + b + c\"",
+                        "\"a\", \"b\", \"c\"",
+                        "\"abcabcabc\"",
+                        "\"abc\" concatenated as one string"),
+                "\"abc\" concatenated as one string"));
+
+        questions.add(new QuizQuestion("What is the correct syntax to inherit a class in Python?",
+                Arrays.asList("class ChildClass(ParentClass):",
+                        "class ParentClass inherit ChildClass:",
+                        "class ParentClass derive ChildClass:",
+                        "class ParentClass(ChildClass)"),
+                "class ChildClass(ParentClass):"));
+
+        questions.add(new QuizQuestion("What is the correct structure of a Python decorator?",
+                Arrays.asList("A function that takes another function and returns a new function",
+                        "A method that defines the __call__() method",
+                        "A function that modifies global variables",
+                        "A class that takes a function and returns an instance"),
+                "A function that takes another function and returns a new function"));
+
+        questions.add(new QuizQuestion("In Python, can a class inherit from multiple classes?",
+                Arrays.asList("Only if the parent classes don’t have constructors",
+                        "No",
+                        "Yes",
+                        "Only if the parent classes belong to the same module"),
+                "Yes"));
+
+        questions.add(new QuizQuestion("What is the output of this code?\n" +
+                "\n" +
+                "from functools import reduce\n" +
+                "\n" +
+                "nums = [1, 2, 3, 4]\n" +
+                "result = reduce(lambda x, y: x * y, nums, 10)\n" +
+                "print(result)",
+                Arrays.asList("240",
+                        "20",
+                        "10",
+                        "0"),
+                "240"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "chars = ['a', 'b', 'c', 'A', 'B', 'C']\n" +
+                "result = filter(lambda x: x.islower(), chars)\n" +
+                "print(\"\".join(result))",
+                Arrays.asList("'abcABC'",
+                        "'abc'",
+                        "'a', 'b', 'c'",
+                        "'ABC'"),
+                "'abc'"));
+
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "class Engine:\n" +
+                "    def start(self):\n" +
+                "        return \"Engine started\"\n" +
+                "\n" +
+                "class Car:\n" +
+                "    def __init__(self):\n" +
+                "        self.engine = Engine()\n" +
+                "\n" +
+                "    def start_car(self):\n" +
+                "        return self.engine.start()\n" +
+                "\n" +
+                "car = Car()\n" +
+                "print(car.start_car())",
+                Arrays.asList("No output",
+                        "\"Engine started\"",
+                        "\"Engine started\" and then \"Car started\"",
+                        "Error"),
+                "\"Engine started\""));
+
+        questions.add(new QuizQuestion("What method is used to call the parent class constructor explicitly?",
+                Arrays.asList("super()",
+                        "self()",
+                        "base()",
+                        "parent()"),
+                "super()"));
+
+        questions.add(new QuizQuestion("What will happen if you try to access a key that does not exist in a dictionary using square brackets?\n" +
+                "\n" +
+                "d = {'a': 1, 'b': 2}\n" +
+                "print(d['c'])",
+                Arrays.asList("Throws an error",
+                        "'c'",
+                        "None",
+                        "0"),
+                "Throws an error"));
+
+        questions.add(new QuizQuestion("What will happen if you try to access a key that does not exist in a dictionary using square brackets?\n" +
+                "\n" +
+                "d = {'a': 1, 'b': 2}\n" +
+                "print(d['c'])",
+                Arrays.asList("Throws an error",
+                        "'c'",
+                        "None",
+                        "0"),
+                "Throws an error"));
+
+        questions.add(new QuizQuestion("What is the data type of the following?\n" +
+                "\n" +
+                "x = {1: \"a\", 2: \"b\", 3: \"c\"}",
+                Arrays.asList("List",
+                        "Dictionary",
+                        "List",
+                        "Set"),
+                "Dictionary"));
+
+        questions.add(new QuizQuestion("What will be the result of the following code?\n" +
+                "\n" +
+                "x = 0\n" +
+                "while True:\n" +
+                "    x += 1\n" +
+                "    if x == 3:\n" +
+                "        continue\n" +
+                "    elif x == 5:\n" +
+                "        break\n" +
+                "    print(x, end=\" \")",
+                Arrays.asList("1 2 4 5",
+                        "1 2 4",
+                        "Infinite loop",
+                        "1 2 3"),
+                "1 2 4"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "x, y, z = 5, \"Hello\", 3.2 \n" +
+                "print(type(y))",
+                Arrays.asList("<class 'list'>",
+                        "<class 'str'>",
+                        "<class 'float'>",
+                        "<class 'int'>"),
+                "<class 'str'>"));
+
+        questions.add(new QuizQuestion("What will the following code produce?\n" +
+                "\n" +
+                "x = 5\n" +
+                "y = 10\n" +
+                "if x > 5:\n" +
+                "    print(\"A\")\n" +
+                "elif x == 5 and y < 10:\n" +
+                "    print(\"B\")\n" +
+                "elif y >= 10 or x < 5:\n" +
+                "    print(\"C\")\n" +
+                "else:\n" +
+                "    print(\"D\")",
+                Arrays.asList("D",
+                        "A",
+                        "B",
+                        "C"),
+                "C"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "for i in range(1, 6):\n" +
+                "   if i % 2 == 0:\n" +
+                "      print(i, end=\" \")",
+                Arrays.asList("2 4",
+                        "1 2 3 4 5",
+                        "1 3 5",
+                        "Throws an error"),
+                "2 4"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "def outer(x):\n" +
+                "    def inner(y):\n" +
+                "        return x + y\n" +
+                "    return inner\n" +
+                "closure = outer(5)\n" +
+                "print(closure(3))",
+                Arrays.asList("8",
+                        "5",
+                        "Error",
+                        "3"),
+                "8"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "nums = [1, 2, 3, 4]\n" +
+                "result = map(lambda x: x * 2, filter(lambda y: y % 2 == 0, nums))\n" +
+                "print(list(result))",
+                Arrays.asList("[2, 4, 6, 8]",
+                        "[4, 8]",
+                        "[1, 3]",
+                        "[8]"),
+                "[4, 8]"));
+
+        questions.add(new QuizQuestion("Which of the following is a valid example of map()?",
+                Arrays.asList("map([1, 2, 3], lambda x: x * 2)",
+                        "map(lambda x: x * 2, range(3))",
+                        "map(x * 2, [1, 2, 3])",
+                        "map([1, 2, 3], x => x * 2)"),
+                "map(lambda x: x * 2, range(3))"));
+
+        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
+                "\n" +
+                "add = lambda x, y: x + y\n" +
+                "print(add(5, 3))",
+                Arrays.asList("add(5,3)",
+                        "8",
+                        "Error",
+                        "5, 3"),
+                "8"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "class A:\n" +
+                "    def __init__(self):\n" +
+                "        self.__x = 10\n" +
+                "    def get_x(self):\n" +
+                "        return self.__x\n" +
+                "\n" +
+                "obj = A()\n" +
+                "print(obj.__x)",
+                Arrays.asList("Error",
+                        "10",
+                        "0",
+                        "No output"),
+                "Error"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "def func(a, b=10):\n" +
+                "    return a + b\n" +
+                "print(func(5))",
+                Arrays.asList("5",
+                        "15",
+                        "No output",
+                        "Error"),
+                "15"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "strings = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\", \"abbott\"]\n" +
+                "result = filter(lambda x: len(x) > 5 and x[0] == 'b', strings)\n" +
+                "print(list(result))",
+                Arrays.asList("['banana', 'cherry']",
+                        "['cherry', 'date']",
+                        "['banana']",
+                        "['cherry', 'date']"),
+                "['banana']"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "class A:\n" +
+                "    def __init__(self):\n" +
+                "        self.value = 5\n" +
+                "    def show(self):\n" +
+                "        return lambda x: x * self.value\n" +
+                "obj = A()\n" +
+                "func = obj.show()\n" +
+                "print(func(2))",
+                Arrays.asList("10",
+                        "No output",
+                        "2",
+                        "5"),
+                "10"));
+
+        questions.add(new QuizQuestion("What will be the output of this membership operation?\n" +
+                "\n" +
+                "a = \"abcd\"\n" +
+                "b = [\"a\", \"b\", \"c\", \"d\"]\n" +
+                "print(\"abc\" in a and \"abc\" in b)",
+                Arrays.asList("False",
+                        "True",
+                        "None",
+                        "Throws an error"),
+                "False"));
+
+        questions.add(new QuizQuestion("What will happen if you assign a value to an undeclared variable in Python?",
+                Arrays.asList("'NameError' will be raised\n",
+                        "The variable will be automatically declared",
+                        "The code will not run",
+                        "Python will assign the value None to the variable"),
+                "The variable will be automatically declared"));
+
+        questions.add(new QuizQuestion("What is the output of the following code?\n" +
+                "\n" +
+                "def func(a, b=[]):\n" +
+                "    b.append(a)\n" +
+                "    return b\n" +
+                "\n" +
+                "print(func(1))\n" +
+                "print(func(2))\n" +
+                "print(func(3, []))\n" +
+                "print(func(4))",
+                Arrays.asList("[1], [1, 2], [3], [1, 2, 4]",
+                        "[1], [1, 2], [3], [1, 2, 3, 4]",
+                        "No output",
+                        "[1], [2], [3], [4]"),
+                "[1], [1, 2], [3], [1, 2, 4]"));
+
+        questions.add(new QuizQuestion("Which symbol makes a variable private in Python?",
+                Arrays.asList("$$",
+                        "_",
+                        "__",
+                        "self"),
+                "__"));
     }
 
     private void buildUI() {
@@ -682,10 +939,22 @@ public class FullPoliticalQuiz {
             QuizQuestion current = questions.get(currentQuestionIndex);
             java.util.List<String> randomizedOptions = new ArrayList<>(current.options);
             Collections.shuffle(randomizedOptions);
-            questionLabel.setText((currentQuestionIndex + 1) + ". " + current.question);
+
+            String formattedQuestion = current.question
+                    .replace("<", "&lt;")
+                    .replace(">", "&gt;")
+                    .replace(" ", "&nbsp;")
+                    .replace("\n", "<br>");
+
+            questionLabel.setText("<html><div style='font-family: Arial; font-size: 18px; white-space: pre;'>"
+                    + (currentQuestionIndex + 1) + ". " + formattedQuestion
+                    + "</div></html>");
+
+
             for (int i = 0; i < 4; i++) {
                 optionButtons[i].setText(randomizedOptions.get(i));
             }
+
             if (userAnswers[currentQuestionIndex] != null) {
                 for (JRadioButton rb : optionButtons) {
                     if (rb.getText().equals(userAnswers[currentQuestionIndex])) {
@@ -698,6 +967,9 @@ public class FullPoliticalQuiz {
             finishQuiz();
         }
     }
+
+
+
 
     private void saveUserAnswer() {
         for (JRadioButton rb : optionButtons) {
