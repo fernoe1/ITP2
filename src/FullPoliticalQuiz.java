@@ -43,809 +43,292 @@ public class FullPoliticalQuiz {
     private void initQuestions() {
         questions = new ArrayList<>();
 
-        questions.add(new QuizQuestion("What is the result of the following code?\n" +
-                "\n" +
-                "x = [1, 2, 3, 4]  \n" +
-                "x[1:3] = [7, 8, 9]  \n" +
-                "print(x)",
-                Arrays.asList("Throws an error",
-                        "[1, 7, 9, 4]",
-                        "[1, 7, 8, 9, 4]",
-                        "[1, 2, 3, 4, 7, 8, 9]"),
-                "[1, 7, 8, 9, 4]"));
+        questions.add(new QuizQuestion("If we remove elements from the beginning, this operation is faster in linked lists comparing with arrays",
+                Arrays.asList("Disagree",
+                        "Agree",
+                        "",
+                        ""),
+                "Agree"));
 
-        questions.add(new QuizQuestion("Which operator checks if a value is not in a list?",
-                Arrays.asList("not in",
-                        "not",
-                        "is not",
-                        "!="),
-                "not in"));
+        questions.add(new QuizQuestion("Which of these relates to linked lists advantage?",
+                Arrays.asList("Direct access to every element",
+                        "Needs less memory than array",
+                        "Needs more memory than array",
+                        "No need to pre-allocate memory (No buffer)"),
+                "No need to pre-allocate memory (No buffer)"));
 
-        questions.add(new QuizQuestion("What will the following code produce?\n" +
-                "\n" +
-                "t = (1, [2, 3], 4)  \n" +
-                "t[1].append(5)  \n" +
-                "print(t)",
-                Arrays.asList("(1, [2, 3], 4) ",
-                        "(1, [2, 3, 5], 4)",
-                        "(1, 2, 3, 4, 5)",
-                        "Throws an error"),
-                "(1, [2, 3, 5], 4)"));
+        questions.add(new QuizQuestion("Complexity Theory helps to determine the difficulty of a problem, often measured by how much time and space it takes to solve a particular problem",
+                Arrays.asList("Agree",
+                        "Disagree",
+                        "",
+                        ""),
+                "Agree"));
 
-        questions.add(new QuizQuestion("Which of the following operations will modify the list?\n" +
-                "\n" +
-                "x = [1, 2, 3]",
-                Arrays.asList("x.append(4)",
-                        "y = x + [4]",
-                        "x = x * 2",
-                        "z = sorted(x)"),
-                "x.append(4)"));
+        questions.add(new QuizQuestion("Predict output of following program\n" +
+                "#include <stdio.h>\n\n" +
+                "int fun(int n)\n" +
+                "{\n" +
+                "   if (n == 4)\n" +
+                "       return n;\n" +
+                "   else return 2*fun(n+1);\n" +
+                "}\n\n" +
+                "int main()\n" +
+                "{\n" +
+                "printf(\"%d \", fun(2)); // printing the value\n" +
+                "return 0;\n" +
+                "}",
+                Arrays.asList("16",
+                        "4",
+                        "Runtime Error",
+                        "8"),
+                "16"));
 
-        questions.add(new QuizQuestion("What is a variable in Python?",
-                Arrays.asList("A location in memory to store data",
-                        "A function",
-                        "A reserved word",
-                        "A data type"),
-                "A location in memory to store data"));
+        questions.add(new QuizQuestion("What is a time complexity of an algorithm that finds the size of Linked List?",
+                Arrays.asList("O(2^N)",
+                        "O(N*N)",
+                        "O(N)",
+                        "O(1)"),
+                "O(N)"));
 
-        questions.add(new QuizQuestion("What will be the result of the following code?\n" +
-                "\n" +
-                "x = (1, 2, 3)  \n" +
-                "y = (1, 2, [3])  \n" +
-                "z = y  \n" +
-                "y[2].append(4)  \n" +
-                "print(z)",
-                Arrays.asList("(1, 2, [3, 4])",
-                        "(1, 2, [3])",
-                        "(1, 2, 3, 4)",
-                        "Throws a TypeError"),
-                "(1, 2, [3, 4])"));
+        questions.add(new QuizQuestion("In order to add items to the end in the array, the time complexity is",
+                Arrays.asList("Linearithmic complexity O(N*logN)",
+                        "Constant complexity 0(1)",
+                        "Linear time complexity O(N)",
+                        "Logarithmic complexity O(logN)"),
+                "Constant complexity 0(1)"));
 
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "x = 0  \n" +
-                "if x:  \n" +
-                "    print(\"Non-zero\")  \n" +
-                "elif not x:  \n" +
-                "    print(\"Zero\")  \n" +
-                "else:  \n" +
-                "    print(\"Undefined\")",
-                Arrays.asList("Throws an error",
-                        "Zero",
-                        "Non-zero",
-                        "Undefined"),
-                "Zero"));
+        questions.add(new QuizQuestion("Recursion is similar to which of the following?",
+                Arrays.asList("Switch Case",
+                        "if else if",
+                        "Loop",
+                        "If-else"),
+                "Loop"));
 
-        questions.add(new QuizQuestion("Evaluate the following complex logical operation:\n" +
-                "\n" +
-                "x = True  \n" +
-                "y = False  \n" +
-                "z = x or y and not x  \n" +
-                "print(z)",
-                Arrays.asList("True",
-                        "None",
-                        "Throws an error",
-                        "False"),
-                "True"));
+        questions.add(new QuizQuestion("In order to remove items from the specific index of the array, the time complexity is",
+                Arrays.asList("Constant complexity 0(1)",
+                        "Logarithmic complexity O(logN)",
+                        "Linear time complexity O(N)",
+                        "Linearithmic complexity O(N*IogN)"),
+                "Linear time complexity O(N)"));
 
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "s1 = {1, 2, 3}  \n" +
-                "s2 = {3, 4, 5}  \n" +
-                "print(s1 & s2)",
-                Arrays.asList("{3}",
-                        "Throws an error",
-                        "{1, 2, 3, 4, 5}",
-                        "{}"),
-                "{3}"));
-
-        questions.add(new QuizQuestion("What is the output of this nested loop?\n" +
-                "\n" +
-                "for i in range(3):  \n" +
-                "    for j in range(2):  \n" +
-                "        if i == j:  \n" +
-                "            break  \n" +
-                "        print(f\"{i},{j}\", end=\" \")",
-                Arrays.asList("0,0 1,1 2,2",
-                        "No output",
-                        "0,1 0,1 1,2 0,2 1,0 2,1",
-                        "1,0 2,0 2,1"),
-                "1,0 2,0 2,1"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "d = {'a': 1, 'b': 2, 'c': 3}  \n" +
-                "for key, value in d.items():  \n" +
-                "    d[key] = value + 1  \n" +
-                "print(d)",
-                Arrays.asList("{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}",
-                        "{'a': 1, 'b': 2, 'c': 3",
-                        "Throws an error",
-                        "{'a': 2, 'b': 3, 'c': 4}"),
-                "{'a': 2, 'b': 3, 'c': 4}"));
-
-        questions.add(new QuizQuestion("What is the result of the following code?\n" +
-                "\n" +
-                "s = {1, 2, 3}  \n" +
-                "s.add(2)  \n" +
-                "print(s)",
-                Arrays.asList("{1, 2, 3}",
-                        "{1, 3}",
-                        "Throws an error",
-                        "{1, 2, 3, 2}"),
-                "{1, 2, 3}"));
-
-        questions.add(new QuizQuestion("Which of the following is immutable in Python?",
-                Arrays.asList("List",
-                        "String",
-                        "Set",
-                        "Dictionary"),
-                "String"));
-
-        questions.add(new QuizQuestion("What will happen if you omit the else part in an if-else block?",
-                Arrays.asList("The else block is mandatory in Python.",
-                        "The code will execute normally if the condition is true.",
-                        "A SyntaxError will be raised.",
-                        "The code will execute only if the condition is false."),
-                "The code will execute normally if the condition is true."));
-
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "x = [1, 2, 3]  \n" +
-                "print(type(x) is list)",
-                Arrays.asList("None",
-                        "True",
-                        "Throws an error",
-                        "False"),
-                "True"));
-
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "x = 10  \n" +
-                "if x > 5:  \n" +
-                "    pass  \n" +
-                "else:  \n" +
-                "    print(\"Less than 5\")",
-                Arrays.asList("No output",
-                        "None of the answers",
-                        "Throws an error",
-                        "Less than 5"),
-                "No output"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "for i in range(1, 6):  \n" +
-                "    if i % 2 == 0:  \n" +
-                "        print(i, end=\" \")",
-                Arrays.asList("2 4",
-                        "1 2 3 4 5",
-                        "1 3 5",
-                        "2 4 6"),
-                "2 4"));
-
-        questions.add(new QuizQuestion("What is the result of the following operation?\n" +
-                "\n" +
-                "5 > 3 and 2 < 4",
-                Arrays.asList("Throws an error",
-                        "None",
-                        "False",
-                        "True"),
-                "True"));
-
-        questions.add(new QuizQuestion("What does the following code return?\n" +
-                "\n" +
-                "s = \"abcdef\"  \n" +
-                "print(s[1:-1:2])",
-                Arrays.asList("bfdc",
-                        "bd",
-                        "None",
-                        "ace"),
-                "bd"));
-
-        questions.add(new QuizQuestion("What happens if a break statement is encountered inside a for loop?",
-                Arrays.asList("The loop is terminated immediately.",
-                        "The loop continues with the next iteration.",
-                        "The program exits entirely.",
-                        "An error is raised."),
-                "The loop is terminated immediately."));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "x, y = 10, 5  \n" +
-                "print(x != y or x == 10)",
-                Arrays.asList("False",
-                        "True",
-                        "None",
-                        "Throws an error"),
-                "True"));
-
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "i = 1  \n" +
-                "while i < 10:  \n" +
-                "    if i == 5:  \n" +
-                "        break  \n" +
-                "    print(i, end=\" \")  \n" +
-                "    i += 2  ",
-                Arrays.asList("1 3 5",
-                        "1 3 and terminates at 5",
-                        "None",
-                        "Throws an error"),
-                "1 3 and terminates at 5"));
-
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "list = [1, 2, 3, 4, 5]  \n" +
-                "i = 1  \n" +
-                "while i < 2:  \n" +
-                "    print(\"\n" +
-                "\".join(map(str, list)))  \n" +
-                "    i += 1",
-                Arrays.asList("Throws an error",
-                        "1 1",
-                        "1, 2, 3, 4, 5",
-                        "1 \n 2 \n 3 \n 4 \n 5"),
-                "1 \n 2 \n 3 \n 4 \n 5"));
-
-        questions.add(new QuizQuestion("What will happen if the following code is executed?\n" +
-                "\n" +
-                "d = {'a': 1, 'b': 2, 'c': 3}  \n" +
-                "d['d'] = 4  \n" +
-                "print(d)",
-                Arrays.asList("Throws an error",
-                        "{'a': 1, 'b': 2, 'c': 3, 'd': 4}",
-                        "{'a': 1, 'b': 2, 'c': 3}",
-                        "None"),
-                "{'a': 1, 'b': 2, 'c': 3, 'd': 4}"));
-
-        questions.add(new QuizQuestion("What is the output of this conditional expression?\n" +
-                "\n" +
-                "x = 7  \n" +
-                "result = \"Even\" if x % 2 == 0 else \"Odd\"  \n" +
-                "print(result)",
-                Arrays.asList("Even",
-                        "None",
-                        "Odd",
-                        "7"),
-                "Odd"));
-
-        questions.add(new QuizQuestion("What will be the output of this code?\n" +
-                "\n" +
-                "from functools import reduce\n" +
-                "result = reduce(lambda x, y: x + y, [])",
-                Arrays.asList("Error",
-                        "None",
-                        "No output",
-                        "[]"),
-                "Error"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "class A:\n" +
-                "    def display(self):\n" +
-                "        return \"A\"\n" +
-                "\n" +
-                "class B(A):\n" +
-                "    def display(self):\n" +
-                "        return \"B\"\n" +
-                "\n" +
-                "obj = B()\n" +
-                "print(obj.display())",
-                Arrays.asList("B",
-                        "A",
-                        "Error",
-                        "No output"),
-                "B"));
-
-        questions.add(new QuizQuestion("What will this code produce?\n" +
-                "\n" +
-                "nums = [1, 2, 3, 4, 5]\n" +
-                "result = list(filter(lambda x: x % 2, nums))\n" +
-                "print(result)",
-                Arrays.asList("[2, 4]",
-                        "No output",
-                        "Error",
-                        "[1, 3, 5]"),
-                "[1, 3, 5]"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "def my_decorator(func):\n" +
-                "    def wrapper():\n" +
-                "        print(\"Before function call\")\n" +
-                "        func()\n" +
-                "        print(\"After function call\")\n" +
-                "    return wrapper\n" +
-                "\n" +
-                "@my_decorator\n" +
-                "def say_hello():\n" +
-                "    print(\"Hello!\")\n" +
-                "\n" +
-                "say_hello()",
-                Arrays.asList("No output",
-                        "Print \"After function call\" first",
-                        "Print \"Hello!\" only",
-                        "Print \"Before function call\", \"Hello!\", \"After function call\""),
-                "Print \"Before function call\", \"Hello!\", \"After function call\""));
-
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "class Parent:\n" +
-                "    def greet(self):\n" +
-                "        print(\"Hello from Parent\")\n" +
-                "\n" +
-                "class Child(Parent):\n" +
-                "    pass\n" +
-                "\n" +
-                "obj = Child()\n" +
-                "obj.greet()",
-                Arrays.asList("Error: Child must implement greet()",
-                        "\"Hello from Parent\"",
-                        "None",
-                        "\"Hello from Child\""),
-                "\"Hello from Parent\""));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "def mystery(n):\n" +
-                "    if n == 0:\n" +
-                "        return 1\n" +
-                "    return n * mystery(n - 1)\n" +
-                "\n" +
-                "print(mystery(5))",
-                Arrays.asList("120",
-                        "25",
-                        "5",
-                        "Error"),
-                "120"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "nums = [1, 2, 3, 4]\n" +
-                "result = map(lambda x: x * 2, filter(lambda y: y % 2, nums))\n" +
-                "print(list(result))",
-                Arrays.asList("[4, 8]",
-                        "[1, 6]",
-                        "[2, 6]",
-                        "No output"),
-                "[2, 6]"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "def func(a, b=5, c=10):\n" +
-                "    return a + b + c\n" +
-                "\n" +
-                "print(func(1, c=20))",
-                Arrays.asList("35",
-                        "Error",
-                        "16",
-                        "26"),
-                "26"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "nums = [0, 1, -1, 2, -2, 3, 0, -2]\n" +
-                "result = filter(lambda x: x and x > 0, nums)\n" +
-                "print(list(result))",
-                Arrays.asList("Error",
-                        "[1, 2, 3]",
-                        "[0, 1, 2, 3]",
-                        "[-1, -2]"),
-                "[1, 2, 3]"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "from functools import reduce\n" +
-                "\n" +
-                "class Item:\n" +
-                "    def __init__(self, price):\n" +
-                "        self.__price = price\n" +
-                "\n" +
-                "    def get_price(self):\n" +
-                "        return self.__price\n" +
-                "\n" +
-                "x1 = Item(1.5)\n" +
-                "x2 = Item(1)\n" +
-                "x3 = Item(3.5)\n" +
-                "\n" +
-                "cart = [x1, x2, x3]\n" +
-                "budget = 10\n" +
-                "\n" +
-                "money_left = reduce(lambda acc, x: acc - x.get_price(), cart, budget)\n" +
-                "\n" +
-                "print(money_left)",
-                Arrays.asList("4.0",
-                        "6.0",
-                        "No output",
-                        "Error"),
-                "4.0"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "nums = [1, 2, 3, 4]\n" +
-                "result = filter(lambda x: x % 2, map(lambda y: y * 2, nums))\n" +
-                "print(list(result))",
-                Arrays.asList("[]",
-                        "Error",
-                        "[4, 8]",
-                        "[2, 4, 6, 8]"),
-                "[]"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "from functools import reduce\n" +
-                "\n" +
-                "class A:\n" +
-                "    def __init__(self, nums):\n" +
-                "        self.nums = nums\n" +
-                "\n" +
-                "    def multiply(self):\n" +
-                "        return reduce(lambda x, y: x * y, self.nums)\n" +
-                "\n" +
-                "obj = A([1, 2, 3, 4])\n" +
-                "print(obj.multiply())",
-                Arrays.asList("24",
+        questions.add(new QuizQuestion("Consider the following recursive function fun(x, y). What is the value of fun(4, 3)\n" +
+                "int fun(int x, int y)\n" +
+                "{\n" +
+                "   if (x == 0)\n" +
+                "       return y;\n" +
+                "   return fun(x - 1, x + y);\n" +
+                "}\n",
+                Arrays.asList("13",
+                        "9",
                         "10",
-                        "[1, 2, 3, 4]",
-                        "Error"),
-                "24"));
+                        "12"),
+                "13"));
 
-        questions.add(new QuizQuestion("Polymorphism in Python allows:",
-                Arrays.asList("Functional programming",
-                        "Multiple inheritance",
-                        "Secure data encapsulation",
-                        "Methods to have the same name but different implementations"),
-                "Methods to have the same name but different implementations"));
+        questions.add(new QuizQuestion("Average time complexity of Bubble sort is?",
+                Arrays.asList("O(n^2)",
+                        "O(nlogn)",
+                        "O(logn)",
+                        "O(n)"),
+                "O(n^2)"));
 
-        questions.add(new QuizQuestion("Given the following code, what is the output?\n" +
-                "\n" +
-                "class A:\n" +
-                "    def show(self):\n" +
-                "        return \"Class A\"\n" +
-                "\n" +
-                "class B(A):\n" +
-                "    pass\n" +
-                "\n" +
-                "obj = B()\n" +
-                "print(obj.show())",
-                Arrays.asList("Class B",
-                        "Class A",
-                        "Error",
-                        "No output"),
-                "Class A"));
+        questions.add(new QuizQuestion("What would be the asymptotic time complexity to add a node at the end of singly linked list, if the reference is initially referencing to the head of the list?",
+                Arrays.asList("O(logn)",
+                        "O(nlogn)",
+                        "O(n^2)",
+                        "O(n)"),
+                "O(n)"));
 
-        questions.add(new QuizQuestion("What is the output of this code?\n" +
-                "\n" +
-                "nums = [1, 2, 3]\n" +
-                "result = map(lambda x: x ** 2, nums)\n" +
-                "print(result)",
-                Arrays.asList("[1, 4, 9]",
-                        "No output",
-                        "None",
-                        "<map object>"),
-                "<map object>"));
+        questions.add(new QuizQuestion("What is the worst-case runtime of an algorithm that compares two numbers.",
+                Arrays.asList("O(n)",
+                        "O(logN)",
+                        "O(1)",
+                        "O(n^2)"),
+                "O(1)"));
 
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "def decorator(func):\n" +
-                "    def wrapper():\n" +
-                "        print(\"Inside wrapper\")\n" +
-                "    return wrapper\n" +
-                "\n" +
-                "@decorator\n" +
-                "def greet():\n" +
-                "    print(\"Hello!\")\n" +
-                "\n" +
-                "greet()",
-                Arrays.asList("Error",
-                        "\"Hello!\"",
-                        "\"Inside wrapper\"",
-                        "No output"),
-                "\"Inside wrapper\""));
+        questions.add(new QuizQuestion("What is the optimal way to get predecessor's value in a Linked List?",
+                Arrays.asList("there is no way to get access to the predecessor",
+                        "start a new loop from head of a linked list",
+                        "start a new loop from tail ofa linked list",
+                        "store a pointer to the previous node"),
+                "store a pointer to the previous node"));
 
-        questions.add(new QuizQuestion("What will happen if you pass a string as the iterable to reduce()?\n" +
-                "\n" +
-                "from functools import reduce\n" +
-                "result = reduce(lambda x, y: x + y, \"abc\")",
-                Arrays.asList("\"a + b + c\"",
-                        "\"a\", \"b\", \"c\"",
-                        "\"abcabcabc\"",
-                        "\"abc\" concatenated as one string"),
-                "\"abc\" concatenated as one string"));
+        questions.add(new QuizQuestion("In linked list each node contain minimum of two fields. One field is data field to store the data second field is?",
+                Arrays.asList("Node",
+                        "Pointer to character",
+                        "Pointer to integer",
+                        "Pointer to node"),
+                "Pointer to node"));
 
-        questions.add(new QuizQuestion("What is the correct syntax to inherit a class in Python?",
-                Arrays.asList("class ChildClass(ParentClass):",
-                        "class ParentClass inherit ChildClass:",
-                        "class ParentClass derive ChildClass:",
-                        "class ParentClass(ChildClass)"),
-                "class ChildClass(ParentClass):"));
+        questions.add(new QuizQuestion("Consider an implementation of unsorted singly linked list. Suppose it has its representation with a head reference only. Given the representation, which of the following operation can be\n" +
+                "implemented in 0(1) time?\n" +
+                "i) Insertion at the front of the linked list\n" +
+                "ii) Insertion at the end of the linked list\n" +
+                "iii) Deletion of the front node of the linked list\n" +
+                "iv) Deletion of the last node of the linked list",
+                Arrays.asList("I,II and III",
+                        "I,II and IV",
+                        "I and II",
+                        "I and III"),
+                "I and III"));
 
-        questions.add(new QuizQuestion("What is the correct structure of a Python decorator?",
-                Arrays.asList("A function that takes another function and returns a new function",
-                        "A method that defines the __call__() method",
-                        "A function that modifies global variables",
-                        "A class that takes a function and returns an instance"),
-                "A function that takes another function and returns a new function"));
+        questions.add(new QuizQuestion("What is the time complexity of the following code:\n\n" +
+                "int a = 0;\n" +
+                "   for (i = 0; i < N; i++) {\n" +
+                "       for (j = N; j > i; j--) {\n" +
+                "           a = a + i + j;\n" +
+                "       }\n" +
+                "}",
+                Arrays.asList("O(N * Sqrt(N))",
+                        "O(N)",
+                        "O(N*N)",
+                        "O(N*log(N))"),
+                "O(N*N)"));
 
-        questions.add(new QuizQuestion("In Python, can a class inherit from multiple classes?",
-                Arrays.asList("Only if the parent classes don’t have constructors",
-                        "No",
-                        "Yes",
-                        "Only if the parent classes belong to the same module"),
-                "Yes"));
+        questions.add(new QuizQuestion("What is the time, space complexity of following code:\n\n" +
+                "int a = 0, b = 0;\n" +
+                "for (i = 0; i < N; i++) {\n" +
+                "   a = a + randO;\n" +
+                "} \n for (j = 0; j < M; j++) {\n" +
+                "   b = b + rand();\n" +
+                "} \n Assume that rand() is 0(1) time, 0(1) space function.",
+                Arrays.asList("O(N*M) time, O(1) space",
+                        "O(N*M) time, O(N*M) space",
+                        "O(N+M) time, O(N+M) space",
+                        "O(N+M) time, O(1) space"),
+                "O(N+M) time, O(1) space"));
 
-        questions.add(new QuizQuestion("What is the output of this code?\n" +
-                "\n" +
-                "from functools import reduce\n" +
-                "\n" +
-                "nums = [1, 2, 3, 4]\n" +
-                "result = reduce(lambda x, y: x * y, nums, 10)\n" +
-                "print(result)",
-                Arrays.asList("240",
-                        "20",
-                        "10",
-                        "0"),
-                "240"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "chars = ['a', 'b', 'c', 'A', 'B', 'C']\n" +
-                "result = filter(lambda x: x.islower(), chars)\n" +
-                "print(\"\".join(result))",
-                Arrays.asList("'abcABC'",
-                        "'abc'",
-                        "'a', 'b', 'c'",
-                        "'ABC'"),
-                "'abc'"));
-
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "class Engine:\n" +
-                "    def start(self):\n" +
-                "        return \"Engine started\"\n" +
-                "\n" +
-                "class Car:\n" +
-                "    def __init__(self):\n" +
-                "        self.engine = Engine()\n" +
-                "\n" +
-                "    def start_car(self):\n" +
-                "        return self.engine.start()\n" +
-                "\n" +
-                "car = Car()\n" +
-                "print(car.start_car())",
-                Arrays.asList("No output",
-                        "\"Engine started\"",
-                        "\"Engine started\" and then \"Car started\"",
-                        "Error"),
-                "\"Engine started\""));
-
-        questions.add(new QuizQuestion("What method is used to call the parent class constructor explicitly?",
-                Arrays.asList("super()",
-                        "self()",
-                        "base()",
-                        "parent()"),
-                "super()"));
-
-        questions.add(new QuizQuestion("What will happen if you try to access a key that does not exist in a dictionary using square brackets?\n" +
-                "\n" +
-                "d = {'a': 1, 'b': 2}\n" +
-                "print(d['c'])",
-                Arrays.asList("Throws an error",
-                        "'c'",
-                        "None",
-                        "0"),
-                "Throws an error"));
-
-        questions.add(new QuizQuestion("What will happen if you try to access a key that does not exist in a dictionary using square brackets?\n" +
-                "\n" +
-                "d = {'a': 1, 'b': 2}\n" +
-                "print(d['c'])",
-                Arrays.asList("Throws an error",
-                        "'c'",
-                        "None",
-                        "0"),
-                "Throws an error"));
-
-        questions.add(new QuizQuestion("What is the data type of the following?\n" +
-                "\n" +
-                "x = {1: \"a\", 2: \"b\", 3: \"c\"}",
-                Arrays.asList("List",
-                        "Dictionary",
-                        "List",
-                        "Set"),
-                "Dictionary"));
-
-        questions.add(new QuizQuestion("What will be the result of the following code?\n" +
-                "\n" +
-                "x = 0\n" +
-                "while True:\n" +
-                "    x += 1\n" +
-                "    if x == 3:\n" +
-                "        continue\n" +
-                "    elif x == 5:\n" +
-                "        break\n" +
-                "    print(x, end=\" \")",
-                Arrays.asList("1 2 4 5",
-                        "1 2 4",
-                        "Infinite loop",
-                        "1 2 3"),
-                "1 2 4"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "x, y, z = 5, \"Hello\", 3.2 \n" +
-                "print(type(y))",
-                Arrays.asList("<class 'list'>",
-                        "<class 'str'>",
-                        "<class 'float'>",
-                        "<class 'int'>"),
-                "<class 'str'>"));
-
-        questions.add(new QuizQuestion("What will the following code produce?\n" +
-                "\n" +
-                "x = 5\n" +
-                "y = 10\n" +
-                "if x > 5:\n" +
-                "    print(\"A\")\n" +
-                "elif x == 5 and y < 10:\n" +
-                "    print(\"B\")\n" +
-                "elif y >= 10 or x < 5:\n" +
-                "    print(\"C\")\n" +
-                "else:\n" +
-                "    print(\"D\")",
-                Arrays.asList("D",
-                        "A",
-                        "B",
-                        "C"),
-                "C"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "for i in range(1, 6):\n" +
-                "   if i % 2 == 0:\n" +
-                "      print(i, end=\" \")",
-                Arrays.asList("2 4",
-                        "1 2 3 4 5",
-                        "1 3 5",
-                        "Throws an error"),
-                "2 4"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "def outer(x):\n" +
-                "    def inner(y):\n" +
-                "        return x + y\n" +
-                "    return inner\n" +
-                "closure = outer(5)\n" +
-                "print(closure(3))",
-                Arrays.asList("8",
-                        "5",
-                        "Error",
-                        "3"),
-                "8"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "nums = [1, 2, 3, 4]\n" +
-                "result = map(lambda x: x * 2, filter(lambda y: y % 2 == 0, nums))\n" +
-                "print(list(result))",
-                Arrays.asList("[2, 4, 6, 8]",
-                        "[4, 8]",
-                        "[1, 3]",
-                        "[8]"),
-                "[4, 8]"));
-
-        questions.add(new QuizQuestion("Which of the following is a valid example of map()?",
-                Arrays.asList("map([1, 2, 3], lambda x: x * 2)",
-                        "map(lambda x: x * 2, range(3))",
-                        "map(x * 2, [1, 2, 3])",
-                        "map([1, 2, 3], x => x * 2)"),
-                "map(lambda x: x * 2, range(3))"));
-
-        questions.add(new QuizQuestion("What will be the output of the following code?\n" +
-                "\n" +
-                "add = lambda x, y: x + y\n" +
-                "print(add(5, 3))",
-                Arrays.asList("add(5,3)",
-                        "8",
-                        "Error",
-                        "5, 3"),
-                "8"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "class A:\n" +
-                "    def __init__(self):\n" +
-                "        self.__x = 10\n" +
-                "    def get_x(self):\n" +
-                "        return self.__x\n" +
-                "\n" +
-                "obj = A()\n" +
-                "print(obj.__x)",
-                Arrays.asList("Error",
-                        "10",
-                        "0",
-                        "No output"),
-                "Error"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "def func(a, b=10):\n" +
-                "    return a + b\n" +
-                "print(func(5))",
-                Arrays.asList("5",
-                        "15",
-                        "No output",
-                        "Error"),
-                "15"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "strings = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\", \"abbott\"]\n" +
-                "result = filter(lambda x: len(x) > 5 and x[0] == 'b', strings)\n" +
-                "print(list(result))",
-                Arrays.asList("['banana', 'cherry']",
-                        "['cherry', 'date']",
-                        "['banana']",
-                        "['cherry', 'date']"),
-                "['banana']"));
-
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "class A:\n" +
-                "    def __init__(self):\n" +
-                "        self.value = 5\n" +
-                "    def show(self):\n" +
-                "        return lambda x: x * self.value\n" +
-                "obj = A()\n" +
-                "func = obj.show()\n" +
-                "print(func(2))",
-                Arrays.asList("10",
-                        "No output",
+        questions.add(new QuizQuestion("How many NULL references in a doubly linked list?",
+                Arrays.asList("3",
+                        "1",
                         "2",
-                        "5"),
-                "10"));
+                        "0"),
+                "2"));
 
-        questions.add(new QuizQuestion("What will be the output of this membership operation?\n" +
-                "\n" +
-                "a = \"abcd\"\n" +
-                "b = [\"a\", \"b\", \"c\", \"d\"]\n" +
-                "print(\"abc\" in a and \"abc\" in b)",
-                Arrays.asList("False",
-                        "True",
-                        "None",
-                        "Throws an error"),
-                "False"));
+        questions.add(new QuizQuestion("Which of the following data structures is LIFO data structure?",
+                Arrays.asList("Linked List",
+                        "Tree",
+                        "Stack",
+                        "Queue"),
+                "Stack"));
 
-        questions.add(new QuizQuestion("What will happen if you assign a value to an undeclared variable in Python?",
-                Arrays.asList("'NameError' will be raised\n",
-                        "The variable will be automatically declared",
-                        "The code will not run",
-                        "Python will assign the value None to the variable"),
-                "The variable will be automatically declared"));
+        questions.add(new QuizQuestion("What would be the asymptotic time complexity to find an element in the linked list?",
+                Arrays.asList("O(n)",
+                        "O(logn)",
+                        "O(nlogn)",
+                        "O(n^2)"),
+                "O(n)"));
 
-        questions.add(new QuizQuestion("What is the output of the following code?\n" +
-                "\n" +
-                "def func(a, b=[]):\n" +
-                "    b.append(a)\n" +
-                "    return b\n" +
-                "\n" +
-                "print(func(1))\n" +
-                "print(func(2))\n" +
-                "print(func(3, []))\n" +
-                "print(func(4))",
-                Arrays.asList("[1], [1, 2], [3], [1, 2, 4]",
-                        "[1], [1, 2], [3], [1, 2, 3, 4]",
-                        "No output",
-                        "[1], [2], [3], [4]"),
-                "[1], [1, 2], [3], [1, 2, 4]"));
+        questions.add(new QuizQuestion("What would be the asymptotic time complexity to add a node at the end of singly linked list, if the reference is initially referencing to the head of the list?",
+                Arrays.asList("O(logn)",
+                        "O(n^2)",
+                        "O(nlogn)",
+                        "O(n)"),
+                "O(n)"));
 
-        questions.add(new QuizQuestion("Which symbol makes a variable private in Python?",
-                Arrays.asList("$$",
-                        "_",
-                        "__",
-                        "self"),
-                "__"));
+        questions.add(new QuizQuestion("What does the following function do for a given Linked List with first node as head?\n" +
+                "void fun1(Node head)\n" +
+                "{\n" +
+                "   if (head == NULL)\n" +
+                "   return;\n" +
+                "   fun1(head.next);\n" +
+                "   printf(\"%d \", head.data);\n" +
+                "}",
+                Arrays.asList("Prints all nodes of linked lists in direct order",
+                        "Prints alternate nodes in reverse order",
+                        "Prints all nodes of linked list in reverse order",
+                        "Prints alternate nodes of Linked List"),
+                "Prints all nodes of linked list in reverse order"));
+
+        questions.add(new QuizQuestion("How the getting process to a specific node in the linked list is called?",
+                Arrays.asList("Traversal",
+                        "Merging",
+                        "Inserting",
+                        "Extraction"),
+                "Traversal"));
+
+        questions.add(new QuizQuestion("What does the following function print for n = 25?\n" +
+                "void fun(int n)\n" +
+                "{\n" +
+                "   if (n == 0)\n" +
+                "       return;\n" +
+                "\n\n printf( \"%d\" , n%2); // printing the value\n" +
+                "fun (n/2);\n" +
+                "}",
+                Arrays.asList("10011",
+                        "00000",
+                        "11111",
+                        "11001"),
+                "10011"));
+
+        questions.add(new QuizQuestion("Considering the fact that the memory is cheap nowadays, do you agree that time complexity is more important than space complexity",
+                Arrays.asList("Disagree",
+                        "Agree",
+                        "",
+                        ""),
+                "Disagree"));
+
+        questions.add(new QuizQuestion("Which of these relates to linked list's disadvantage?",
+                Arrays.asList("No direct access to elements",
+                        "Complexity in deletion",
+                        "Complexity in insertion",
+                        "Weakness in performance"),
+                "No direct access to elements"));
+
+        questions.add(new QuizQuestion("Find the slowest time",
+                Arrays.asList("O(n!)",
+                        "O(logn)",
+                        "O(n^2)",
+                        "O(n)"),
+                "O(n!)"));
+
+        questions.add(new QuizQuestion("What does the following function do?\n" +
+                "int fun(int x, int y)\n" +
+                "{\n" +
+                "   if (y == 0) return 0;\n" +
+                "   return (x + fun(x, y-1));\n" +
+                "}",
+                Arrays.asList("x*y",
+                        "x + x*y",
+                        "x^y",
+                        "x + y"),
+                "x*y"));
+
+        questions.add(new QuizQuestion("If the last node of a linked list references back to the head node instead of containing the null reference we call it",
+                Arrays.asList("circular linked list",
+                        "Array list",
+                        "singly linked list",
+                        "linked list"),
+                "circular linked list"));
+
+        questions.add(new QuizQuestion("In order to remove items from the end of the array, the time complexity is",
+                Arrays.asList("O(1)",
+                        "O(logn)",
+                        "O(n)",
+                        "O(nlogn)"),
+                "O(1)"));
+
+        questions.add(new QuizQuestion("What is the time complexity of insert(index) method in LinkedList?",
+                Arrays.asList("O(n)",
+                        "O(logn)",
+                        "O(nlogn)",
+                        "O(n^2)"),
+                "O(n)"));
+
+        questions.add(new QuizQuestion("What is the time, space complexity of following code:\n" +
+                "int a = 0, b = 0;\n" +
+                "for (i = 0; i < N; i++) {\n" +
+                "   for (j = 0; j < N;j++) {\n" +
+                "       a = a + j;\n" +
+                "   }\n" +
+                "}\n" +
+                "for (k = 0; k < N; k++) {\n" +
+                "   b=b+k;\n" +
+                "}",
+                Arrays.asList("O(N*N) time, O(1) space",
+                        "O(N+N) time, O(1) space",
+                        "O(N*N*N) time, O(1) space",
+                        "O(N*N) time, O(N) space"),
+                "O(N*N) time, O(1) space"));
     }
 
     private void buildUI() {
